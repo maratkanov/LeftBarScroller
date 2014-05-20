@@ -3,6 +3,7 @@ package com.example.appScroller;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
@@ -10,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Scroller;
 
 
@@ -38,9 +40,9 @@ public class MyViewGroup extends ViewGroup {
         super(context, attrs, defStyle);
 
         View leftView = new View(getContext());
-        leftView.setBackgroundColor(Color.YELLOW);
+        leftView.setBackgroundResource(R.drawable.two);
         View centerView = new View(getContext());
-        centerView.setBackgroundColor(Color.BLUE);
+        centerView.setBackgroundResource(R.drawable.one);
 
         addView(centerView);
         addView(leftView);
